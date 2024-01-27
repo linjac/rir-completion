@@ -271,10 +271,10 @@
 
   <div class="row">
     <div class="column">
-        <audio controls src="source/audio/test.wav" type="audio/wav" width=100%></audio>
+        <audio controls width=100% src="source/audio/test.wav" type="audio/wav"></audio>
     </div>
     <div class="column">
-        <audio controls src="source/audio/test.wav" type="audio/wav" width=100%></audio>
+        <audio controls width=100% src="source/audio/test.wav" type="audio/wav"></audio>
     </div>
     <div class="column">
         <audio controls src="source/audio/test.wav" type="audio/wav" width=100%></audio>
@@ -295,6 +295,93 @@
         <audio controls src="source/audio/test.wav" type="audio/wav" width=100%></audio>
     </div>
   </div>
+  
+  <table class="table table-sm text-center" style="vertical-align: middle;">
+    <tr>
+        <th class="passage">Utterance</th>
+        <th>Clean</th>
+        <th> <span class="target">Reference</span></th>
+        <th> <span class="anchor">Anchor</span></th>
+        <th> <span class="waveunet">Wave-U-Net</th>
+        <th> <span class="finsd">FiNS (D)</th>
+        <th> <span class="fins">FiNS</span></th>
+    </tr>
+    <tr>
+        <td class="passage">F1 VCTK <p class="params">Speech</p>
+        </td>
+        <td>
+            <audio controls class="player">
+                <source src="audio/mushra/female1-vctk/0-x.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </td>
+        <td>
+            <audio controls class="player">
+                <source src="audio/mushra/female1-vctk/0-y_fix.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </td>
+        <td>
+            <audio controls class="player">
+                <source src="audio/mushra/female1-vctk/0-baseline-y_hat_fix.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </td>
+        <td>
+            <audio controls class="player">
+                <source src="audio/mushra/female1-vctk/0-waveunet-y_hat_fix.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </td>
+        <td>
+            <audio controls class="player">
+                <source src="audio/mushra/female1-vctk/0-tcn+direct-y_hat_fix.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </td>
+        <td>
+            <audio controls class="player">
+                <source src="audio/mushra/female1-vctk/0-tcn+noise-y_hat_fix.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td class="passage">
+            <p class="params">RIR</p>
+        </td>
+        <td>
+            <audio controls class="player">
+                <source src="audio/mushra/female1-vctk/0-p.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </td>
+        <td>
+            <audio controls class="player">
+                <source src="audio/mushra/female1-vctk/0-baseline-p_hat.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </td>
+        <td>
+            <audio controls class="player">
+                <source src="audio/mushra/female1-vctk/0-waveunet-p_hat.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </td>
+        <td>
+            <audio controls class="player">
+                <source src="audio/mushra/female1-vctk/0-tcn+direct-p_hat.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </td>
+        <td>
+            <audio controls class="player">
+                <source src="audio/mushra/female1-vctk/0-tcn+noise-p_hat.wav" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </td>
+    </tr>
 </section>
 
 <section>
