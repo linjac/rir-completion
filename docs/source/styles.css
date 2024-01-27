@@ -1,0 +1,57 @@
+.player {
+    width: 100%;
+}
+
+.passage {
+    width: 100px;
+    font-weight: 600;
+}
+
+.params {
+    font-weight: 400; 
+    margin: 0;
+}
+
+.table {
+    table-layout: fixed;
+    vertical-align: middle;
+}
+
+.table td {
+    vertical-align: middle !important;
+}
+
+.abstract {
+    max-width: 100%;
+}
+
+.target {
+    color: rgb(126, 126, 126);
+    font-weight: 600;
+}
+
+.anchor {
+    color: rgb(214,39,40);
+    font-weight: 600;
+}
+
+.waveunet {
+    color: rgb(185, 201, 47);
+    font-weight: 600;
+}
+
+.finsd {
+    color: rgb(41, 175, 127);
+    font-weight: 600;
+}
+
+.fins {
+    color: rgb(57, 86, 140);
+    font-weight: 600;
+}
+
+.fins1 {
+    font-size: small;
+    font-weight: 500;
+}
+
