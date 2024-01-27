@@ -1,0 +1,153 @@
+body {
+  width: 1000px;
+  margin: 0px auto 20px;
+}
+
+.header {
+  margin: 30px auto 20px;
+}
+
+.header h1 {
+  margin: 0px auto 15px;
+  font-size: 34px;
+  text-align: center;
+}
+
+.header h2 {
+  margin: 0px auto 8px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.header h3 {
+  margin: 0px auto 8px;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.header h4 {
+  margin: 0px auto 20px;
+  font-size: 19px;
+  text-align: center;
+}
+
+
+section {
+  margin: 40px auto 30px;
+  clear: both;
+}
+
+.abstract {
+  margin: 40px 100px 60px;
+  clear: both;
+}
+
+.abstract header {
+  margin: 0px 20px 0px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.abstract p {
+  margin: 0px 20px 10px;
+  font-size: 14px;
+  text-align: justify;
+}
+
+section header {
+  margin: 0px 20px 10px;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: left;
+}
+
+section p {
+  padding: 10px 20px 5px;
+  font-size: 16px;
+  text-align: left;
+  line-height: 125%
+}
+
+section h2 {
+  padding: 30px 20px 10px;
+  font-size: 22px;
+  text-align: left;
+}
+
+section p .cite {
+  font-size: 12px;
+}
+
+section p .citation{
+  font-family: Consolas, monaco, monospace;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+section .bibref {
+  padding: 20px 20px 5px;
+  font-family: Consolas, monaco, monospace;
+  font-size: 14px;
+  display: none;
+}
+
+.fakelink {
+  cursor: pointer;
+}
+
+img {
+  margin: 12px auto;
+  display: block;
+}
+
+.width75 { width: 75%; }
+.width96 { width: 96%; }
+
+ul {
+  padding: 5px 30px 5px;
+  font-size: 15px;
+  list-style-type: circle;
+}
+
+li {
+  margin: 10px 25px;
+}
+
+li .cite {
+  font-size: 11px;
+}
+
+.disable {
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+footer {
+  margin: 10px auto 40px;
+  font-size: 12px;
+  text-align: center;
+}
+
+hr.mainhr {
+  border: 0px;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.8), rgba(0,0,0,0)); 
+  background-image: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.8), rgba(0,0,0,0)); 
+  background-image: -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.8), rgba(0,0,0,0)); 
+  background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.8), rgba(0,0,0,0)); 
+}
+
+hr.midhr {
+    border: 0px;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+}
+
+a       { color: #888; }
+a:hover { text-decoration: underline; }
+a:focus { outline: #888 dotted thin; }
+
+::selection      { background: #B3BBBF; color: #FFF; }
+::-moz-selection { background: #B3BBBF; color: #FFF; }
