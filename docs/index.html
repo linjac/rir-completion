@@ -89,7 +89,10 @@
             <div class="row mb-4">
                 <div class="col-md-6 text-justify">
                     <p>
-                        The audio examples below are the original raw RIR, the DECOR output, and the adapted FiNS baseline model output.
+                        The audio examples below are the original raw RIR, the DECOR output, and the adapted FiNS baseline model output. Each example RIR is convolved 
+						with speech from an internal speech dataset and music from a 
+						<a href="https://research.cs.aalto.fi/acoustics/virtual-acoustics/research/acoustic-measurement-and-analysis/85-anechoic-recordings.html">
+						public dataset</a> of anechoic recordings of symphonic music. 
                     </p>
                 </div>
                 <div class="col-md-6">
@@ -100,12 +103,22 @@
             <br>
 
             <table class="table table-sm text-center" style="vertical-align: middle;">
+				 <thead>
+					<tr>
+					  <th scope="col"> <span class="target">Example</span> </th>
+					  <th scope="col"> <span class="target">Type</span></th>
+                      <th scope="col"> <span class="target">Reference</span></th>
+                      <th scope="col"> <span class="decor">DECOR</span></th>
+					  <th scope="col"> <span class="fins">FiNS</th>
+					</tr>
+				 </thead>
                 <tr>
-                    <th> <span class="target">Reference</span></th>
-                    <th> <span class="decor">DECOR</span></th>
-					<th> <span class="fins">FiNS</th>
-                </tr>
-                <tr>
+                    <td>
+                        Example 1
+                    </td>
+					<td>
+						RIR
+					</td>
                     <td>
                         <audio controls class="player">
                             <source src="source/audio/411_gt.wav" type="audio/mpeg">
@@ -125,7 +138,82 @@
                         </audio>
                     </td>
                 </tr>
+				<tr>
+                    <td></td>
+					<td>
+						Speech 1
+					</td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/dry/p15-2-2.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/411_decor_p15-2-2.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/411_fins_p15-2-2.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+				<tr>
+                    <td></td>
+					<td>
+						Speech 2
+					</td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/dry/p17-1-3.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/411_decor_p17-1-3.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/411_fins_p17-1-3.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+				<tr>
+                    <td></td>
+					<td>
+						Music
+					</td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/dry/mozart_vl1_6.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/411_decor_mozart_vl1_6.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/411_fins_mozart_vl1_6.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+			
                 <tr>
+					<td>Example 2</td>
+					<td>RIR</td>
                     <td>
                         <audio controls class="player">
                             <source src="source/audio/761_gt.wav" type="audio/mpeg">
@@ -144,6 +232,79 @@
                             Your browser does not support the audio element.
                         </audio>
                     </td>
+				<tr>
+                    <td></td>
+					<td>
+						Speech 1
+					</td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/dry/p15-2-2.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/761_decor_p15-2-2.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/761_fins_p15-2-2.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+				<tr>
+                    <td></td>
+					<td>
+						Speech 2
+					</td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/dry/p17-1-3.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/761_decor_p17-1-3.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/761_fins_p17-1-3.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+				<tr>
+                    <td></td>
+					<td>
+						Music
+					</td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/dry/mozart_vl1_6.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/761_decor_mozart_vl1_6.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/761_fins_mozart_vl1_6.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+			
                 </tr>
             </table>
             <p class="text-center">
