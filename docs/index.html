@@ -66,16 +66,19 @@
                     <div class="col-md-12 text-justify">
                         <p>
                             <b>Abstract</b>
-							Rendering immersive spatial audio in virtual reality (VR) and video games demands a fast and accurate generation of room impulse responses (RIRs) 
-							to recreate auditory environments plausibly. However, the conventional methods for simulating or measuring long RIRs are either computationally 
-							intensive or challenged by low signal-to-noise ratios. This study is propelled by the insight that direct sound and early reflections encapsulate 
-							sufficient information about room geometry and absorption characteristics. Building upon this premise, we propose a novel task termed 
-							"RIR completion," aimed at synthesizing the late reverberation given only the early portion (50 ms) of the response. To this end, we introduce 
-							DECOR, Deep Exponential Completion Of Room impulse responses, a deep neural network structured as an autoencoder designed to predict 
-							multi-exponential decay envelopes of filtered noise sequences. The interpretability of DECOR's output facilitates its integration with diverse 
-							rendering techniques. The proposed method is compared against an adapted state-of-the-art network, and comparable performance shows promising 
-							results supporting the feasibility of the RIR completion task. The RIR completion can be widely adapted to enhance RIR generation tasks where 
-							fast late reverberation approximation is required.
+							Rendering immersive spatial audio in virtual reality (VR) and video games demands a fast and
+                            accurate generation of room impulse responses (RIRs) to recreate auditory environments plausibly.
+                            However, the conventional methods for simulating or measuring long RIRs are either computationally
+                            intensive or challenged by low signal-to-noise ratios. This study is propelled by the insight that direct
+                            sound and early reflections encapsulate sufficient information about room geometry and absorption
+                            characteristics. Building upon this premise, we propose a novel task termed ”RIR completion,” aimed
+                            at synthesizing the late reverberation given only the early portion (50 ms) of the response. To this end,
+                            we introduce DECOR, Deep Exponential Completion Of Room impulse responses, a deep neural
+                            network structured as an encoder-decoder designed to predict multi-exponential decay envelopes of
+                            filtered noise sequences. The proposed method is compared against a much larger adapted state-of-
+                            the-art network, and comparable performance shows promising results supporting the feasibility of
+                            the RIR completion task. The RIR completion can be widely adapted to enhance RIR generation
+                            tasks where fast late reverberation approximation is required.
                         </p>
                         <hr>
                     </div>
@@ -96,7 +99,7 @@
                     </p>
                 </div>
                 <div class="col-md-6">
-                    <img class="img-fluid" src="source/img/NetworkOverview.svg">
+                    <img class="img-fluid" src="source/img/NetworkOverview_paper.pdf">
 					<p><b>DECOR</b>: Network overview. DECOR predicts multi-exponential decay curves per filtered noise sequence to construct the RIR tail.</p>
                 </div>
             </div>
@@ -339,6 +342,344 @@
                     <td>
                         <audio controls class="player">
                             <source src="source/audio/wet/761_fins_mozart_vl1_6.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+                
+                <tr>
+					<td>Example 3</td>
+					<td>RIR</td>
+                    <td></td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/77_gt.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/77_I2.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/77_I9_fins175.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+				<tr>
+                    <td></td>
+					<td>
+						Speech 1
+					</td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/dry/p15-2-2.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/77_gt_p15-2-2.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/77_I2_p15-2-2.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/77_I9_fins175_p15-2-2.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+				<tr>
+                    <td></td>
+					<td>
+						Speech 2
+					</td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/dry/p17-1-3.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/77_gt_p17-1-3.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/77_I2_p17-1-3.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/77_I9_fins175_p17-1-3.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+				<tr>
+                    <td></td>
+					<td>
+						Music
+					</td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/dry/mozart_vl1_6.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/77_gt_mozart_vl1_6.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/77_I2_mozart_vl1_6.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/77_I9_fins175_mozart_vl1_6.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+                <tr>
+					<td>Example 4</td>
+					<td>RIR</td>
+                    <td></td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/86_gt.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/86_I2.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/86_I9_fins175.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+				<tr>
+                    <td></td>
+					<td>
+						Speech 1
+					</td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/dry/p15-2-2.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/86_gt_p15-2-2.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/86_I2_p15-2-2.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/86_I9_fins175_p15-2-2.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+				<tr>
+                    <td></td>
+					<td>
+						Speech 2
+					</td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/dry/p17-1-3.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/86_gt_p17-1-3.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/86_I2_p17-1-3.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/86_I9_fins175_p17-1-3.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+				<tr>
+                    <td></td>
+					<td>
+						Music
+					</td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/dry/mozart_vl1_6.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/86_gt_mozart_vl1_6.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/86_I2_mozart_vl1_6.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/86_I9_fins175_mozart_vl1_6.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+
+                <tr>
+					<td>Example 5</td>
+					<td>RIR</td>
+                    <td></td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/446_gt.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/446_I2.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/446_I9_fins175.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+				<tr>
+                    <td></td>
+					<td>
+						Speech 1
+					</td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/dry/p15-2-2.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/446_gt_p15-2-2.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/446_I2_p15-2-2.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/446_I9_fins175_p15-2-2.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+				<tr>
+                    <td></td>
+					<td>
+						Speech 2
+					</td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/dry/p17-1-3.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/446_gt_p17-1-3.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/446_I2_p17-1-3.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/446_I9_fins175_p17-1-3.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+				<tr>
+                    <td></td>
+					<td>
+						Music
+					</td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/dry/mozart_vl1_6.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/446_gt_mozart_vl1_6.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/446_I2_mozart_vl1_6.wav" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <td>
+                        <audio controls class="player">
+                            <source src="source/audio/wet/446_I9_fins175_mozart_vl1_6.wav" type="audio/mpeg">
                             Your browser does not support the audio element.
                         </audio>
                     </td>
